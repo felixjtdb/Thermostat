@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="main.css"/>
+<meta charset="UTF-8">
+<title>Thermostat</title>
+<script src="./src/thermostat.js"></script>
+<script src="./jquery/dist/jquery.js"></script>
+<script src="./src/interface.js"></script>
+
+</head>
+
+<body>
+
+<div "buttons">
+  <input type="button" value="Decrease" id="decreaseTemp">
+  <input type="button" value="Reset" id="resetTemp">
+  <input type="button" value="Increase" id="increaseTemp">
+  <input type="button" value="Toggle PowerSaver" id="togglePS">
+</div>
+<br>
+<div "display data">
+Teperature : <label id="temperature"></label> <br>
+PowerSaver on? : <label id="PS"></label> <br>
+Energy : <label id="usage">  </label> <br>
+Outside Weather : <label id="outside_weather"> </label>
+<select id="location_select">
+<option value="London"> London </option>
+<option value="Manchester"> Manchester </option>
+<option value="Leeds"> Leeds </option>
+<option value="Hull"> Hull </option>
+<br>
+</div>
+
+
+</body>
