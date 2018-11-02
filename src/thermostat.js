@@ -1,6 +1,7 @@
-function Thermostat() {
-  this.temp = 20;
-  this.powersaver = true;
+function Thermostat(savedstate) {
+  this.temp = savedstate.temp;
+  this.powersaver = savedstate.ps;
+  this.city = savedstate.city;
 };
 
 Thermostat.prototype.add1 = function () {
